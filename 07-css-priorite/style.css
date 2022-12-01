@@ -1,0 +1,15 @@
+#container { /* 11000 */
+    background-color: yellow !important;
+}
+
+.container {
+    background-color: red;
+}
+
+#container.container { /* 1100 de priorité */
+    background-color: blue;
+}
+
+section#container.container { /* 1110 de priorité */
+    background-color: aqua;
+}

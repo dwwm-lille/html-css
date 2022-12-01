@@ -1,0 +1,50 @@
+body {
+    background-color: lightgray;
+}
+
+#paragraph-1 {
+    color: #98b762;
+}
+
+.red, .text-red {
+    color: #c59999;
+}
+
+.uppercase, .majuscule {
+    text-transform: uppercase;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.big-blue {
+    color: blue;
+    font-weight: 700;
+}
+
+#title {
+    color: red;
+    font-weight: bold;
+}
+
+.first {
+    color: brown;
+    font-weight: bold;
+}
+
+.blue {
+    color: lightcyan;
+}
+
+.green {
+    color: green;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.second {
+    color: blue;
+}

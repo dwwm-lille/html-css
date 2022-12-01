@@ -1,0 +1,70 @@
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.flex div {
+    width: 30%;
+    background-color: red;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.mobile {
+    display: none;
+}
+
+h1 {
+    font-size: 3em;
+    /* Autre solution avec le calc */
+    font-size: calc(16px + 1vw);
+}
+
+.square {
+    background-color: blue;
+    /* 1vw => 1% de la largeur de l'écran */
+    width: 50vw;
+    /* 1vh => 1% de la hauteur de l'écran */
+    height: 10vh;
+}
+
+/* Tablettes (De 769px à 992px) */
+@media /*(min-width: 769px) and*/ (max-width: 992px) {
+    .flex {
+        justify-content: space-between;
+        max-width: 500px;
+    }
+
+    .flex div {
+        width: 48%;
+        background-color: yellow;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+/* Smartphones (De 0 à 768px inclus) */
+@media (max-width: 768px) {
+    .flex div {
+        width: 100%;
+        background-color: blue;
+        margin-bottom: 50px;
+    }
+}

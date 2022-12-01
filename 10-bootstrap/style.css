@@ -1,0 +1,11 @@
+.bg-primary {
+    background-color: red !important;
+}
+
+.navbar-brand {
+    font-size: 35px;
+}
+
+.navbar-nav .nav-link.active {
+    color: blue;
+}

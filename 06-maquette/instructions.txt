@@ -1,0 +1,14 @@
+Maquette :
+
+- Intégration de la maquette. La structure en PRIORITE.
+- Le logo est un texte avec la police BallPark (Ou PlayBall sur Google Fonts)
+- Le reste de la page est en police Open Sans
+- Il faut une ombre sur la bannière
+- Il faut bien gérer les arrondis sur le menu latéral
+- Bonus: On pourra faire un effet de hover sur le bouton "Voir l'article"
+- Bonus: On pourra faire un effet de hover sur le menu
+- Bonus: Dans le header, on a un hr en absolute à positionner.
+- Bonus: Pour les réseaux sociaux, on devra utiliser une seule image
+         en background et la positionner correctement. En plus, on pourra
+         également modifier la position au hover pour afficher l'icône
+         sans couleur.

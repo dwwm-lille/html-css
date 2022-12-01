@@ -1,0 +1,164 @@
+.exercice-1 {
+  color: #f1faee;
+  background-color: #1d3557;
+  border: 2px solid #457b9d;
+}
+.exercice-1:hover {
+  color: #e63946;
+  background-color: #a8dadc;
+}
+
+.job {
+  background-color: lightgray;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.job .job-title {
+  color: #666666;
+}
+.job .job-description {
+  border: 1px solid #000;
+  border-right: 0;
+  border-left: 0;
+}
+.job .job-btn {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: lightgreen;
+  color: #fff;
+  display: inline-block;
+  transition: 0.5s;
+}
+.job .job-btn:hover {
+  transform: rotate(-10deg);
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  transform: rotate(-20deg);
+}
+
+.circle {
+  width: 125px;
+  height: 125px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.btn, .btn-blue, .btn-pink, .btn-brown {
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn:hover, .btn-blue:hover, .btn-pink:hover, .btn-brown:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-brown {
+  background-color: #8b1e1e;
+  border-color: #8b1e1e;
+  color: #e6e6e6;
+}
+.btn-brown:hover {
+  background-color: #370c0c;
+  color: #fff;
+}
+
+.btn-pink {
+  background-color: #edb1bb;
+  border-color: #edb1bb;
+  color: #e6e6e6;
+}
+.btn-pink:hover {
+  background-color: #da5e73;
+  color: #fff;
+}
+
+.btn-blue {
+  background-color: #1212e4;
+  border-color: #1212e4;
+  color: #e6e6e6;
+}
+.btn-blue:hover {
+  background-color: #0b0b85;
+  color: #fff;
+}
+
+.btn-brown {
+  background-color: brown;
+  border-color: brown;
+  color: #e6e6e6;
+}
+.btn-brown:hover {
+  background-color: #541515;
+  color: #fff;
+}
+
+.btn-pink {
+  background-color: pink;
+  border-color: pink;
+  color: #e6e6e6;
+}
+.btn-pink:hover {
+  background-color: #ff5a77;
+  color: #fff;
+}
+
+.grid {
+  margin: 200px 0;
+  display: flex;
+  flex-wrap: wrap;
+  /*.col-1\/3 {
+      width: 33.33%;
+  }
+
+  .col-2\/3 {
+      width: 66.66%;
+  }
+
+  .col-1\/4 {
+      width: 25%;
+  }
+
+  .col-2\/4 {
+      width: 50%;
+  }
+
+  .col-3\/4 {
+      width: 75%;
+  }*/
+}
+.grid .col-1\/1 {
+  width: 100%;
+}
+.grid .col-1\/2 {
+  width: 50%;
+}
+@media (min-width: 992px) {
+  .grid .lg\:col-1\/2 {
+    width: 50%;
+  }
+}
+.grid .col-1\/3 {
+  width: 33.3333333333%;
+}
+.grid .col-2\/3 {
+  width: 66.6666666667%;
+}
+.grid .col-1\/4 {
+  width: 25%;
+}
+.grid .col-2\/4 {
+  width: 50%;
+}
+.grid .col-3\/4 {
+  width: 75%;
+}
+
+/*# sourceMappingURL=style.css.map */

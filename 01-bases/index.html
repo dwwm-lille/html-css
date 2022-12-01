@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Ma première page HTML</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<!-- Un titre de niveau 1, le niveau max est 6 -->
+        <h1>Hello world !</h1>
+        <h2>Un sous-titre</h2>
+		<!-- Attention à l'indentation... Alt + Maj + F -->
+        <!-- Alt + shift + A = Raccourci -->
+        <!-- Tab ou Majuscule / Tab pour indenter (2 sens) -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum sapiente eius explicabo cumque vero ipsum quae ut a alias quibusdam natus rem amet unde fugiat, minima consequuntur doloremque architecto hic.
+        </p>
+        <p>
+            Un texte qui <br />
+            passe à la ligne
+        </p>
+        <hr />
+
+        <!-- Pour les images, on a un chemin -->
+        <!-- Absolu => http://site.com/un-chaton.jpeg -->
+        <!-- Relatif => un-chaton.jpeg -->
+        <img id="mon-ancre" width="200" src="un-chaton.jpeg" alt="Un chaton">
+
+        <!-- On peut afficher des listes en HTML -->
+        <ul>
+            <!-- Avec Emmet => li*3>{Item $} -->
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>
+                <p>Item 4</p>
+            </li>
+        </ul>
+
+        <!-- ol>li*2>{Element $} -->
+        <ol>
+            <li>Element 1</li>
+            <li>Element 2</li>
+        </ol>
+
+        <!--
+            Ecrire le code HTML permettant d'avoir le rendu suivant :
+            1. Chien
+                ° Jack Russel
+                ° Doberman
+                ° Husky
+            2. Chat
+                ° Gouttière
+                ° Européen
+                ° Persan
+            3. Oiseau
+                ° Pigeon
+                ° Perroquet
+                ° Roucoups
+        -->
+
+        <ol>
+            <li>
+                <p>Chien</p>
+                <ul>
+                    <li>Jack Russel</li>
+                    <li>Doberman</li>
+                    <li>Husky</li>
+                </ul>
+            </li>
+            <li>
+                <p>Chat</p>
+                <ul>
+                    <li>Gouttière</li>
+                    <li>Européen</li>
+                    <li>Persan</li>
+                </ul>
+            </li>
+            <li>
+                <p>Oiseau</p>
+                <ul>
+                    <li>Pigeon</li>
+                    <li>Perroquet</li>
+                    <li>Roucoups</li>
+                </ul>
+            </li>
+        </ol>
+        <!-- ol>li*3>p+ul>li*3 -->
+
+        <p>
+            <strong>En gras</strong>
+            <em>en italique</em>
+            <s>un text barré</s>
+            <u>souligné</u>
+            <span>Test</span>
+            <span>Toto</span>
+        </p>
+
+        <!-- Les liens en HTML -->
+        <!-- Lien relatif => Lien interne sur le site entre nos pages -->
+        <a href="index.html">Accueil</a>
+        <a href="cv.html">Mon CV</a>
+        <!-- Lien absolu => Lien externe vers un site -->
+        <a href="https://www.google.fr" target="_blank">Google</a>
+
+        <a href="#mon-ancre">Une ancre</a>
+
+        <!-- On peut faire des tableaux pour lister des données -->
+        <table border="1px" cellspacing="0" align="center" cellpadding="20px">
+            <thead>
+                <tr> <!-- Une ligne -->
+                    <th>Nom</th> <!-- Une colonne -->
+                    <th>Année de sortie du film</th>
+                    <th>Acteurs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Spider-Man: Far from home</td>
+                    <td align="center">2019</td>
+                    <td>Tom Holland, Zendaya</td>
+                </tr>
+                <tr>
+                    <td>The Batman</td>
+                    <td align="center" colspan="2">2022</td>
+                </tr>
+            </tbody>
+            <caption align="bottom">Mes films</caption>
+        </table>
+
+        <br /><br /><br /><br /><br />
+
+        <table align="center" cellpadding="10px">
+            <caption>Facture 0001</caption>
+            <thead>
+                <tr>
+                    <th>Produit</th>
+                    <th align="center">Quantité</th>
+                    <th align="right">Prix HT</th>
+                    <th align="right">Prix TTC</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nom 1</td>
+                    <td align="center">1</td>
+                    <td align="right">6,66 €</td>
+                    <td align="right">9,99 €</td>
+                </tr>
+                <tr>
+                    <td>Nom 2</td>
+                    <td align="center">1</td>
+                    <td align="right">6,66 €</td>
+                    <td align="right">9,99 €</td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td align="right">13,32 €</td>
+                    <td align="right">19,98 €</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	</body>
+</html>

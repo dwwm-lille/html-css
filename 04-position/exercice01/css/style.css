@@ -1,0 +1,36 @@
+.cover {
+    background-image: url(../img/chaton.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 600px;
+    position: relative;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.cover h2 {
+    margin: 0;
+    position: absolute;
+    /* bottom: 15px;
+    right: 15px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+    text-shadow: 4px 4px 6px #000;
+}
+
+.filter {
+    background-color: #000000;
+    /* #000000aa pour l'opacité */
+    /* rgba(0, 0, 255, 0.5) */
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}

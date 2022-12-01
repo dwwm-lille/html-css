@@ -1,0 +1,39 @@
+.container {
+    width: 1000px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    background-color: yellow;
+    align-items: center;
+}
+
+.logo {
+    width: 700px;
+    padding: 20px 0 20px 10px;
+}
+
+.bg-blue {
+    background-color: blue;
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+article {
+    background-color: pink;
+    width: 190px;
+    height: 190px;
+}
+
+aside {
+    background-color: red;
+    flex-grow: 1;
+    padding: 20px 10px;
+}

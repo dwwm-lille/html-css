@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text, .images {
+    width: 44%;
+}
+
+.title {
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.title h2 {
+    color: #6d7d92;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.title h1 {
+    color: #0f172a;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.reviews-location {
+    margin-top: 10px;
+    font-size: 12px;
+    justify-content: flex-start;
+}
+
+.reviews-location > span {
+    margin: 0 20px 0 10px;
+}
+
+.reviews-location .blue {
+    color: #3163ea;
+}
+
+.reviews-location .grey {
+    color: #b7bcc5;
+}
+
+.reviews-location .bold {
+    font-weight: bold;
+}
+
+.button {
+    background-color: #3163ea;
+    color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.text p {
+    font-size: 14px;
+    line-height: 1.75em;
+    margin-top: 20px;
+}
+
+.images {
+    flex-wrap: wrap;
+}
+
+.images img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.images .main {
+    margin-bottom: 20px;
+}
+
+.images .secondary {
+    width: 48%;
+    height: 130px;
+}
+
+svg {
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 1123px) {
+    .container {
+        width: 85%;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .text, .images {
+        width: 100%;
+    }
+
+    .title {
+        margin-top: 20px;
+        flex-direction: row;
+    }
+
+    .images .main {
+        width: 48%;
+    }
+
+    .images .secondary {
+        width: 24%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+    .images .secondary {
+        width: 48%;
+    }
+
+    .images .secondary:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 639px) {
+    .title {
+        flex-direction: column;
+        margin-top: -90px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .title h1, .title h2 {
+        color: #fff;
+        padding-left: 20px;
+    }
+
+    .title h1 {
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+
+    .images {
+        position: relative;
+    }
+
+    .images:after {
+        content: '';
+        background-image: linear-gradient(transparent, #0f172a);
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        height: 50%;
+        border-radius: 15px;
+    }
+
+    .images .main {
+        width: 100%;
+        height: 250px;
+    }
+
+    .images .secondary {
+        display: none;
+    }
+}

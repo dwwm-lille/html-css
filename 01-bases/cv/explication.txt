@@ -1,0 +1,23 @@
+HTML / CSS:
+- Mini CV: Faire son CV en HTML
+  Afficher son prénom et son nom dans un h1 et dans le titre de la page
+  Afficher l'âge dans un paragraphe, le métier dans un autre
+  Une image avec une photo
+  Afficher l'adresse dans une div, un lien sur une adresse mail et un lien sur le téléphone
+  Une liste avec les formations (et un titre Formations)
+  Une liste avec les compétences (et un titre Compétences)
+  Une liste avec les expériences (et un titre Expériences)
+
+
+
+- CSS => Ajouter une feuille de style
+  Centrer le CV sur la page avec une largeur fixe
+  Centrer le prénom, l'âge et le métier
+  Mettre en fond bleu clair la partie prénom, nom, âge et adresse avec une marge séparant le reste
+  Mettre une bordure en haut et en bas de cette partie
+  Mettre l'image à droite dans cette partie
+  Mettre un fond bleu et une bordure en haut sur chaque titre (formation, compétences et expériences)
+  Le titre sera en majuscule, en bleu foncé et sera espacé par rapport au fond (marge interne)
+  Séparer toutes les listes avec une marge
+  Le bas de la liste aura une bordure bleu mais le fond du contenu sera transparent
+  Sur la liste Formation, mettre en gras les années et faire en sorte qu'on ait un espace entre l'année et la description

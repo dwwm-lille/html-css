@@ -1,0 +1,186 @@
+$color-1: #e63946;
+$color-2: #f1faee;
+$color-3: #a8dadc;
+$color-4: #457b9d;
+$color-5: #1d3557;
+
+.exercice-1 {
+    color: $color-2;
+    background-color: $color-5;
+    border: 2px solid $color-4;
+
+    &:hover {
+        color: $color-1;
+        background-color: $color-3;
+    }
+}
+
+// exercice 2
+.job {
+    background-color: lightgray;
+    border-radius: 5px;
+    border: 1px solid gray;
+
+    .job-title {
+        color: lighten(#000, 40%);
+    }
+
+    .job-description {
+        border: 1px solid #000;
+        border-right: 0;
+        border-left: 0;
+    }
+
+    .job-btn {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: lightgreen;
+        color: #fff;
+        display: inline-block;
+        transition: .5s;
+
+        &:hover {
+            transform: rotate(-10deg);
+        }
+    }
+}
+
+// exercice 3
+@mixin square($size, $color) {
+    width: $size;
+    height: $size;
+    background-color: $color;
+
+    @if ($size == 150px) {
+        transform: rotate(-20deg);
+    }
+}
+
+.square {
+    @include square(150px, blue);
+}
+
+@mixin circle($color) {
+    @include square(125px, $color);
+    border-radius: 50%;
+}
+
+.circle {
+    @include circle(red);
+}
+
+// exercice 4
+.btn {
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    // &.btn-brown {}
+    &:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+$buttons: (
+    brown: #8b1e1e,
+    pink: #edb1bb,
+    blue: #1212e4,
+);
+
+// Code avec boucle
+@each $name, $color in $buttons {
+    .btn-#{$name} {
+        @extend .btn;
+        background-color: $color;
+        border-color: $color;
+        color: darken(#fff, 10%);
+        &:hover {
+            background-color: darken($color, 20%);
+            color: #fff;
+        }
+    }
+}
+
+// Code sans boucle
+.btn-brown {
+    @extend .btn;
+    background-color: brown;
+    border-color: brown;
+    color: darken(#fff, 10%);
+    &:hover {
+        background-color: darken(brown, 20%);
+        color: #fff;
+    }
+}
+
+.btn-pink {
+    @extend .btn;
+    background-color: pink;
+    border-color: pink;
+    color: darken(#fff, 10%);
+    &:hover {
+        background-color: darken(pink, 20%);
+        color: #fff;
+    }
+}
+
+// exercice 6
+.grid {
+    margin: 200px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    // On échappe le slash avec un antislash
+    .col-1\/1 {
+        width: 100%;
+    }
+
+    @for $i from 1 to 2 {
+        .col-#{$i}\/2 {
+            width: 100% / 2 * $i;
+        }
+
+        @media (min-width: 992px) {
+            .lg\:col-#{$i}\/2 {
+                width: 100% / 2 * $i;
+            }
+        }
+    }
+
+    @for $i from 1 to 3 {
+        // @debug($i);
+        .col-#{$i}\/3 {
+            width: 100% / 3 * $i;
+        }
+    }
+
+    @for $i from 1 to 4 {
+        // @debug($i);
+        .col-#{$i}\/4 {
+            width: 100% / 4 * $i;
+        }
+    }
+
+    /*.col-1\/3 {
+        width: 33.33%;
+    }
+
+    .col-2\/3 {
+        width: 66.66%;
+    }
+
+    .col-1\/4 {
+        width: 25%;
+    }
+
+    .col-2\/4 {
+        width: 50%;
+    }
+
+    .col-3\/4 {
+        width: 75%;
+    }*/
+}

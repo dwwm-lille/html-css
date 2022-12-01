@@ -1,0 +1,18 @@
+@mixin container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+%navbar-button {
+    padding: 12px 24px;
+    border-radius: 4px;
+    background: $main;
+    color: $light;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        background-color: $secondary;
+    }
+}

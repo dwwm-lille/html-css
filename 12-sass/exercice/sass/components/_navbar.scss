@@ -1,0 +1,63 @@
+.navbar {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .navbar-logo {
+        color: $dark;
+        font-size: 32px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .navbar-menu {
+        li {
+            display: inline;
+    
+            a {
+                color: $dark;
+                text-decoration: none;
+                padding: 10px;
+                transition: .5s;
+    
+                &:hover:not(.navbar-button) {
+                    color: $main;
+                }
+    
+                &.navbar-button {
+                    @extend %navbar-button;
+                    margin-left: 20px;
+                }
+            } 
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .navbar-burger {
+        display: none;
+        cursor: pointer;
+
+        span {
+            display: block;
+            height: 4px;
+            width: 30px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            background-color: #000;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        @include mobile {
+            display: block;
+        }
+    }
+}

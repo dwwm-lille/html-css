@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Il existe 3 façons d'intégrer du CSS dans le HTML
+        (de la moins bonne à la meilleure méthode)
+        - Attribut style des balises
+        - Balise style dans le head
+        - Un fichier externe en .css
+    -->
+    <h1 style="color: blue;">Mon titre est en bleu</h1>
+    <!-- Un id est unique -->
+    <p id="paragraph-1">Ce paragraphe est centré et vert</p>
+    <!-- On peut avoir une ou plusieurs classes par éléments -->
+    <p class="red uppercase">Le paragraphe est rouge</p>
+
+    <!--
+        La couleur du paragraphe devra être en orange (fond).
+        Le premier span devra être en majuscule.
+        Le second span sera en gras et en bleu (texte).
+        Le dernier span devra être en rouge (texte).
+    -->
+
+    <p id="p2" class="orange">
+        On va mettre un texte avec ce <span class="majuscule">mot</span> en majuscule.
+        Il faudra un <span class="big-blue">mot</span> en gras et en bleu.
+        Il y aura aussi un <span class="text-red">span</span> en rouge.
+    </p>
+
+    <!--
+        Mettre le titre en rouge et gras.
+        Mettre le 1er texte en marron et en gras.
+        Mettre le mot "voitures" en bleu dans le titre.
+        Mettre le mot "moto" en vert dans le texte.
+        Souligner le mot super et le mot titre.
+        Mettre le 2ème texte en bleu.
+        Vous avez le droit de modifier le HTML et d'ajouter des classes.
+        Ajoutez au moins un id.
+    -->
+    <h1 id="title">
+        Le <span class="underline">titre</span> du site de <span class="blue">voitures</span>
+    </h1>
+    <p class="first">
+        Mon <span class="underline">super</span> texte avec une <span class="green">moto</span>
+    </p>
+    <p class="second">Un texte en bleu</p>
+</body>
+</html>

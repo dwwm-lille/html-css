@@ -1,0 +1,102 @@
+@import 'variables';
+@import 'reset';
+@import 'media-queries';
+@import 'mixins';
+
+body {
+    background-color: $light;
+    font-family: $fonts;
+}
+
+@import 'components/navbar';
+
+.hero {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 40px;
+
+    .hero-left, .hero-right {
+        width: 50%;
+
+        h1 {
+            font-size: 60px;
+            color: $main;
+
+            span {
+                display: block;
+
+                &:last-child {
+                    color: $dark;
+                }
+            }
+
+            @include mobile {
+                font-size: 45px;
+            }
+        }
+
+        p {
+            color: $dark;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 25px 0;
+        }
+
+        .hero-img {
+            max-width: 80%;
+        }
+
+        @include mobile {
+            margin-bottom: 50px;
+        }
+    }
+
+    .hero-right {
+        text-align: right;
+    }
+
+    .hero-button {
+        @extend %navbar-button;
+        position: relative;
+
+        &:hover {
+            background-color: $main;
+
+            &:after {
+                width: 100%;
+            }
+        }
+
+        span {
+            position: relative;
+            z-index: 1;
+            color: $light;
+            text-decoration: none;
+        }
+
+        &:after {
+            content: '';
+            background-color: $secondary;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: .5s;
+        }
+    }
+
+    @include mobile {
+        .hero-left, .hero-right {
+            width: 100%;
+
+            .hero-img {
+                max-width: 100%;
+            }
+        }
+    }
+}

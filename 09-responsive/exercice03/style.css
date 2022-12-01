@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+} 
+
+body {
+    background-color: chocolate;
+    height: 5000px;
+}
+
+.burger-menu {
+    background-color: rgba(255, 255, 255, 0.75);
+    position: fixed;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+
+#burger-click:checked + .burger-menu {
+    transform: translateX(0%);
+}
+
+#burger-click:checked ~ header span {
+    background-color: #000;
+    position: relative;
+}
+
+#burger-click:checked ~ header span:first-child {
+    transform: rotateZ(405deg);
+    top: 10px;
+}
+
+#burger-click:checked ~ header span:nth-child(2) {
+    opacity: 0;
+}
+
+#burger-click:checked ~ header span:last-child {
+    transform: rotateZ(-405deg);
+    top: -10px;
+}
+
+#burger-click {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 30px 20px;
+    position: relative;
+}
+
+header span {
+    display: block;
+    width: 32px;
+    height: 4px;
+    margin: 6px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+}

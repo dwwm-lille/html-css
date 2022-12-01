@@ -1,0 +1,6 @@
+- Si la maquette est terminée, on va créer 2 pages supplémentaires: blog.html et contact.html
+  Les pages seront accessibles via le menu. Sur ces pages, on retrouvera le menu et le footer.
+  Sur blog.html, on aura une grille avec 3 div par lignes. Chaque div contiendra une image, un titre et
+  un texte. Il y aura 6 div en tout.
+  Sur contact.html, on aura un formulaire (voir la balise form) avec un champ email (voir la balise input)
+  et un champ de message (voir la balise textarea). On aura aussi un bouton pour envoyer le formulaire.
